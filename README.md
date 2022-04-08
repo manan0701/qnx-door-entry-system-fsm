@@ -1,4 +1,4 @@
-# QNX Neutrino Door Entry System (DES)
+# Door Entry System (DES) for QNX Neutrino RTOS
 
 The repository contains programs that simulate a building entry controller system.
 
@@ -38,7 +38,7 @@ Input prompts:
 
 a. The first prompt is:
 
-> _Enter the event type (ls= left scan, rs= right scan, ws= weight scale, lo =left open, ro=right open, lc = left closed, rc = right closed , gru = guard right unlock, grl = guard right lock, gll=guard left lock, glu = guard left unlock)_
+> _Enter the event type (ls = left scan, rs = right scan, ws = weight scale, lo = left open, ro = right open, lc = left closed, rc = right closed , gru = guard right unlock, grl = guard right lock, gll = guard left lock, glu = guard left unlock, exit = exit programs)_
 
 b. If the event is `lo`, `ro`, `lc`, `rc`, `glu`, `gll`, `gru`, or `grl`, no further prompt is printed.
 
@@ -56,6 +56,13 @@ e. Once the input is finished, send a message to the `des_controller` program to
 
 - When `des_controller` receives an illegal DES input event from `des_inputs`, then the controller does not transition to an accepting state nor an error state. Rather, the state machine of `des_controller` is to remain in its current state.
 - A transition to the next accepting state is only done on receiving the expected valid input event from `des_inputs` based on the DES grammar.
+
+# Development Environment Setup
+
+- The programs were developed for the QNX Neutrino Real-Time Operating System.
+- For my development set-up, I have QNX Software Development Platform (SDP) which includes the ISO image for QNX Neutrino and the QNX Momentics Tool Suite. The software provides a complete and comprehensive development environment for QNX Neutrino-based devices and system.
+- I ran and tested the QNX Neutrino in a virtual machine on VMware Workstation 16.x Pro.
+- Please refer [QNX Development Setup](./Setup Your QNX Development Host.pdf) for detailed instructions written by the Real-Time Programming professor Gerald Hurdle at Algonquin College.
 
 # Example run
 
@@ -153,7 +160,7 @@ exit
 
 ### Error scan inputs
 
-Note: `ls 12345` is a valid input event and all other inputs are invalid.
+> Note: `ls 12345` is a valid input event and all other inputs are invalid.
 
 ls
 
