@@ -78,6 +78,8 @@ e. Once the input is finished, send a message to the `des_controller` program to
 
 # Input Scenarios
 
+> Refer to the [Reference Screenshots](https://github.com/manan0701/qnx-door-entry-system-fsm/tree/main/reference_screenshots) for sample output run.
+
 ### Left scan inputs
 
 ls
