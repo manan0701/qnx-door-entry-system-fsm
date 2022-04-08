@@ -62,7 +62,7 @@ e. Once the input is finished, send a message to the `des_controller` program to
 - The programs were developed for the QNX Neutrino Real-Time Operating System.
 - For my development set-up, I have QNX Software Development Platform (SDP) which includes the ISO image for QNX Neutrino and the QNX Momentics Tool Suite. The software provides a complete and comprehensive development environment for QNX Neutrino-based devices and system.
 - I ran and tested the QNX Neutrino in a virtual machine on VMware Workstation 16.x Pro.
-- Please refer [QNX Development Setup](./Setup Your QNX Development Host.pdf) for detailed instructions written by the Real-Time Programming professor Gerald Hurdle at Algonquin College.
+- Please refer [QNX Development Setup](QNX_Dev_Host_Setup.pdf) for detailed instructions written by the Real-Time Programming professor Gerald Hurdle at Algonquin College.
 
 # Example run
 
