@@ -8,7 +8,11 @@ The system comprises of:
 2. A scale that weighs a person after they have entered in the building
 3. A human guard that uses a switch to open each of the doors
 
-# Details
+# Finite State Machine
+
+<img src="./assets/Finite_State_Machine.jpg" alt="MarineGEO circle logo" height=600 height=800/>
+
+# Specifications
 
 1. People enter the control space from the left to enter the building and enter the control space from the right to exit the building.
 
